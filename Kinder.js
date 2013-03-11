@@ -3,7 +3,7 @@ var mail;
 var cant;
 var filseSystem
 $(function() {
-  $("#btnIngresar").click(function(){validarUsuario($('#txtNombre').val(),$('#txtContrasena').val());});
+	$("#btnIngresar").click(function(){validarUsuario($('#txtNombre').val(),$('#txtContrasena').val());});
 	document.addEventListener('deviceready', function () {
 		alert("se llama al  deviceready");
 		
@@ -22,7 +22,6 @@ function onSucces(fs) {
 	alert("okeyy  " + fs.root.fullPath);
 	fileSystem = fs;
 	//fileSystem.root.getFile("120px-State-lib-sum.png", {create: true, exclusive: false}, function(fileEntry) {
-    var localPath = fileEntry.fullPath;
 	
 	var ft = new FileTransfer();
 	var URL = "http://data-gov.tw.rpi.edu/w/images/thumb/b/b1/State-lib-sum.png/120px-State-lib-sum.png";
